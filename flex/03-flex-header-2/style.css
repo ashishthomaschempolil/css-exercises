@@ -5,13 +5,17 @@ you'll learn about it later. */
 body {
   margin: 0;
   background: #eee;
-  font-family: Besley, serif;
+  font-family: Besley, serif;  
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* added code */
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
 }
 
 .profile-image {
@@ -45,4 +49,14 @@ a {
 
 ul {
   list-style-type: none;
+  /* added code */
+  display: flex;
+  gap: 16px;
+}
+
+/* SOLUTION */
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
